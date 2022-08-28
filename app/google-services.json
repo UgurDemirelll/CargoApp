@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "37575557630",
+    "firebase_url": "https://cargo-964c3-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "cargo-964c3",
+    "storage_bucket": "cargo-964c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37575557630:android:a5a1cec6f64cbf7084c0af",
+        "android_client_info": {
+          "package_name": "com.ugurd.cargoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "37575557630-egevo2hhl4al232qiakuhvba2t234rmm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwNLAS6dnc5j_0XC9Udjo23_qsfIoFNps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "37575557630-egevo2hhl4al232qiakuhvba2t234rmm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

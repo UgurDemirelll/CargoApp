@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/saveFragment">
+
+    <fragment
+        android:id="@+id/saveFragment"
+        android:name="com.ugurd.cargoapp.SaveFragment"
+        android:label="fragment_save"
+        tools:layout="@layout/fragment_save" />
+    <fragment
+        android:id="@+id/displaySelectFragment"
+        android:name="com.ugurd.cargoapp.DisplaySelectFragment"
+        android:label="fragment_display_select"
+        tools:layout="@layout/fragment_display_select" />
+</navigation>
