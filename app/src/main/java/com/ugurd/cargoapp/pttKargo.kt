@@ -9,5 +9,6 @@ data class pttKargo(
     var hareketNo:Int? = 0,
     var islemTarihi:String? = "",
     var hareketYeri:String? = "",
-    var islem:String? = ""){
+    var islem:String? = "",
+    var user:String?){
 }

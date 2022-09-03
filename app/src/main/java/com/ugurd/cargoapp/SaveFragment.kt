@@ -14,19 +14,15 @@ class SaveFragment : Fragment() {
 
     private val kargolar = ArrayList<String>()
     private lateinit var veriadapter:ArrayAdapter<String>
-
-
+    
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
     }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
-
 
         val view = inflater.inflate(R.layout.fragment_save, container, false)
         kargolar.add("hepsijet")
@@ -52,30 +48,24 @@ class SaveFragment : Fragment() {
             try {
                 if(kargoAdi == "hepsijet"){
                     println("hepsijet kaydı")
-                    val kargo = hepsijet(takipNo,0,0,"","","")
+                    val kargo = hepsijet(takipNo,0,0,"","","","")
                     refCargo.push().setValue(kargo)
                 }
                 if(kargoAdi == "mngKargo"){
-                    val kargo = mngKargo(takipNo,0,0,"","","")
+                    val kargo = mngKargo(takipNo,0,0,"","","","")
                     refCargo.push().setValue(kargo)
                 }
                 if(kargoAdi == "pttKargo"){
-                    val kargo = pttKargo(takipNo,0,0,"","","")
+                    val kargo = pttKargo(takipNo,0,0,"","","","")
                     refCargo.push().setValue(kargo)
                 }
                 if(kargoAdi == "suratKargo"){
-                    val kargo = suratKargo(takipNo,0,0,"","","")
+                    val kargo = suratKargo(takipNo,0,0,"","","","")
                     refCargo.push().setValue(kargo)
                 }
             }catch (e : Exception){
                 e.printStackTrace()
             }
-
-
-
-
-
-
         }
         return view
     }
