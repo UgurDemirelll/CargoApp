@@ -29,6 +29,8 @@ class SaveFragment : Fragment() {
         kargolar.add("mngKargo")
         kargolar.add("pttKargo")
         kargolar.add("suratKargo")
+        kargolar.add("upsKargo")
+        kargolar.add("arasKargo")
         context?.let {
             veriadapter = ArrayAdapter(it,android.R.layout.simple_list_item_1,android.R.id.text1,kargolar)
             view.spinnerCargo.adapter = veriadapter
@@ -48,21 +50,30 @@ class SaveFragment : Fragment() {
             try {
                 if(kargoAdi == "hepsijet"){
                     println("hepsijet kaydı")
-                    val kargo = hepsijet(takipNo,0,0,"","","","")
+                    val kargo = hepsijet(takipNo,"","","","","","")
                     refCargo.push().setValue(kargo)
                 }
                 if(kargoAdi == "mngKargo"){
-                    val kargo = mngKargo(takipNo,0,0,"","","","")
+                    val kargo = mngKargo(takipNo,"","","","","","")
                     refCargo.push().setValue(kargo)
                 }
                 if(kargoAdi == "pttKargo"){
-                    val kargo = pttKargo(takipNo,0,0,"","","","")
+                    val kargo = pttKargo(takipNo,"","","","","","")
                     refCargo.push().setValue(kargo)
                 }
                 if(kargoAdi == "suratKargo"){
-                    val kargo = suratKargo(takipNo,0,0,"","","","")
+                    val kargo = suratKargo(takipNo,"","","","","","")
                     refCargo.push().setValue(kargo)
                 }
+                if(kargoAdi == "upsKargo"){
+                    val kargo = upsKargo(takipNo,"","","","","","")
+                    refCargo.push().setValue(kargo)
+                }
+                if(kargoAdi == "arasKargo"){
+                    val kargo = arasKargo(takipNo,"","","","","","")
+                    refCargo.push().setValue(kargo)
+                }
+
             }catch (e : Exception){
                 e.printStackTrace()
             }

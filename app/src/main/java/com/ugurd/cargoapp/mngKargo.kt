@@ -4,9 +4,9 @@ import com.google.firebase.database.IgnoreExtraProperties
 
 @IgnoreExtraProperties
 data class mngKargo(
-    var takipNo: String = "",
-    var urunNo:Int? = 0,
-    var hareketNo:Int? = 0,
+    var takipNo: String? = "",
+    var urunNo:String? = "",
+    var hareketNo:String? = "",
     var islemTarihi:String? = "",
     var hareketYeri:String? = "",
     var islem:String? = "",
